@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Header from './component/header/Header';
 import Main from './component/main/Main';
 import Error from './component/errorPage/Error';
-import Topics from './component/topics/Topics';
+import Topics from './component/topic/Topics';
 import Statistics from './component/statistics/Statistics';
 import Blog from './component/Blog/Blog';
+import Quiz from './component/quiz/Quiz';
 
 function App() {
   const routers = createBrowserRouter([
@@ -18,7 +17,7 @@ function App() {
       children:[
         {
           path: '/',
-          element: <Topics></Topics>,
+          element: <Topics></Topics>
         },
         {
           path: '/statistics',
@@ -27,6 +26,11 @@ function App() {
         {
           path: '/blog',
           element: <Blog />
+        },
+        {
+          path:'quiz/:id',
+          loader: async({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
+          element:<Quiz></Quiz>
         }
       ]
     }

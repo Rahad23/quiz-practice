@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import img from '../../img/logo (1).png'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,8 +79,8 @@ export const Header = () => {
                   <div className="p-5 bg-white border rounded shadow-sm">
                     <div className="flex items-center justify-between mb-4">
                       <div>
-                        <a
-                          href="/"
+                        <Link
+                          to="/"
                           aria-label="Company"
                           title="Company"
                           className="inline-flex items-center"
@@ -88,7 +88,7 @@ export const Header = () => {
                           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           <img src={img} alt="" />
                           </span>
-                        </a>
+                        </Link>
                       </div>
                       <div>
                         <button
@@ -109,34 +109,34 @@ export const Header = () => {
                     <nav>
                       <ul className="space-y-4">
                         <li>
-                          <a
-                            href="/"
+                          <Link
+                            to="/"
                             aria-label="Our product"
                             title="Our product"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Topics
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/"
+                          <Link
+                            to="/statistics"
                             aria-label="Our product"
                             title="Our product"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Statistics
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/"
+                          <Link
+                            to="/blog"
                             aria-label="Our product"
                             title="Our product"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Blog
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </nav>

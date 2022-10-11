@@ -6,7 +6,7 @@ import Header from '../header/Header';
 export const DataContext = createContext();
 const Main = () => {
     const data = useLoaderData();
-    // console.log(data.data);
+    // console.log(data);
     return (
         <DataContext.Provider value={data}>
         <div>

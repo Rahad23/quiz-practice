@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Topic = () => {
     const data = useContext(DataContext);
     const arrayObject = data.data;
-    console.log(arrayObject);
+    // console.log(arrayObject);
     return (
         <div>
             <Review></Review>

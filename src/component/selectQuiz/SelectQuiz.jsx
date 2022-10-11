@@ -7,7 +7,6 @@ const SelectQuiz = ({select, correctAns}) => {
     const [state, setState] = useState(false);
  
     const getText = (text)=>{
-        
         console.log(correctAns);
         if(state===false){
             if(correctAns === text){

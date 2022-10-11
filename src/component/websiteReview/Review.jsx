@@ -9,7 +9,7 @@ const Review = () => {
             <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-center">
                 <img className='shadow-md w-[250px] rounded-full' src={img} alt="" />
-                <div className="space-x-2 text-center py-2 lg:py-0 ml-24">
+                <div className="ml-0 mt-7 lg:mt-0 space-x-2 text-center py-2 lg:py-0 lg:ml-24">
 				<p className='text-lg font-bold text-black'>If you want to become a web developer then this site is for you.<br /> Get started without delay. Best wishes to you</p>
 			</div>
 		</div>

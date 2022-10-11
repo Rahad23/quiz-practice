@@ -15,8 +15,8 @@ const Question = ({quiz}) => {
         )
     }
     return (
-        <div className='mb-8'>
-        <div className="card phone-3 bg-slate-400 rounded-xl p-6 w-[750px]">
+        <div className='mb-8 w-[350px] lg:w-[750px]'>
+        <div className="card phone-3 bg-slate-400 rounded-xl p-6 ">
            <div className= ''>
             <div className='top-2'>
             <div className='flex justify-between items-center'>
@@ -26,7 +26,7 @@ const Question = ({quiz}) => {
             </div>
             </div>
             <h1 className='text-xl text-w text-yellow-100 mt-9'>{quiz.question}</h1>
-            <div className='grid grid-cols-2 gap-6'>
+            <div className='lg:grid grid-cols-1 flex justify-center flex-col lg:grid-cols-2 gap-6'>
                 {
                     quiz.options.map(select=><SelectQuiz key={quiz.options.id} select={select} correctAns={quiz.correctAnswer}></SelectQuiz>)
                 }

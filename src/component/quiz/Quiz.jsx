@@ -8,8 +8,8 @@ const Quiz = () => {
     // console.log(getQuiz.data);
     return (
         <div className='mt-16 container flex justify-center flex-col items-center'>
-            <div className='mb-10'>
-            <div className="card card-side bg-[#9980FA] shadow-lg">
+            <div className='mb-10 p-2 lg:p-0'>
+            <div className="card card-side bg-[#9980FA] shadow-lg z-0">
             <figure><img className='w-32' src={getQuiz.data.logo} alt="Movie"/></figure>
             <div className="card-body">
                 <h2 className="flex justify-center items-center card-title text-white">{getQuiz.data.name}

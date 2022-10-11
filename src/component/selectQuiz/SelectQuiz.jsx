@@ -35,7 +35,7 @@ const SelectQuiz = ({select, correctAns}) => {
             {
             <ToastContainer />
             }
-            <div className="flex w-[330px]">
+            <div className="flex w-[250] lg:w-[330px] justify-center  lg:ml-0">
         <div className="grid h-full p-5 flex-grow card bg-base-300 rounded-box place-items-center">
             <div onClick={()=>setState(!state)}>
                 

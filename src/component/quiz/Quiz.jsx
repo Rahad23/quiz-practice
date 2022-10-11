@@ -9,7 +9,7 @@ const Quiz = () => {
     return (
         <div className='mt-16 container flex justify-center flex-col items-center'>
             <div className='mb-10'>
-            <div className="card card-side bg-slate-400 shadow-xl">
+            <div className="card card-side bg-[#9980FA] shadow-lg">
             <figure><img className='w-32' src={getQuiz.data.logo} alt="Movie"/></figure>
             <div className="card-body">
                 <h2 className="flex justify-center items-center card-title text-white">{getQuiz.data.name}

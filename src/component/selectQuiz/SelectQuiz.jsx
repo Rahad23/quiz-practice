@@ -3,20 +3,21 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const SelectQuiz = ({select, correctAns}) => {
+    console.log(select);
     const [state, setState] = useState(false);
  
     const getText = (text)=>{
         console.log(correctAns);
         if(state===false){
             if(correctAns === text){
-                toast.success("Current Ans!",
+                toast.success("Current Answer !",
                 {
                     position: "top-center",
                     autoClose: 500,
                     theme: "colored",
                 });
             }else{
-                toast.warn("Wrong Ans?",
+                toast.warn("Wrong Answer ?",
             {
                 position: "top-center",
                 autoClose: 500,
@@ -39,10 +40,8 @@ const SelectQuiz = ({select, correctAns}) => {
             <div onClick={()=>setState(!state)}>
                 
             <div onClick={()=>getText(select)} className='flex items-center justify-between'>
-            {
-              state ? <input type="radio" className="radio radio-secondary" value="tbone" checked /> : <input type="radio" name="radio-3" className="radio radio-secondary" />
-            }
-            <label className='block'>
+            <input type="radio" id={select} name={correctAns} value="HTML" />
+            <label for={select} className='block'>
              <h1 className='text-xl text-black ml-2'>{select}</h1>
             </label>
             </div>

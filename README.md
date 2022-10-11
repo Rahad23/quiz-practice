@@ -1,4 +1,5 @@
 ## Live website LINK: https://serene-torte-8bfd7d.netlify.app/
+## Website name == E-School
 ## What is E-School?
 **You can take javascript, CSS, React, Git quiz from E-school.
 

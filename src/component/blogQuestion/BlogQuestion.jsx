@@ -32,6 +32,7 @@ const BlogQuestion = () => {
             </div>
             </div>
         </div>
+        
     );
 };
 
